@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#aaf000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Over the past 2 weeks, how often have you been bothered by any of the following problems? "
+        android:textSize="12pt"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  1. Little interest or pleasure in doing things"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="match_parent"
+        android:id="@+id/spinner" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  2. Feeling down, depressed or hopeless"
+        android:textSize="10pt"
+        android:textColor="#000000"
+
+        />
+
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner2"
+        android:layout_weight="0.06"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  3. Trouble falling asleep, staying asleep, or sleeping too much"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner3" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  4. Feeling tired or having little energy"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner4" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  5. Poor appetite or overeating"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner5" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  6. Feeling bad about yourself - or that you’re a failure or have let yourself or your family down"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner6" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  7. Trouble concentrating on things, such as reading the newspaper or watching television"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner7" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  8. Moving or speaking so slowly that other people could have noticed. Or, the opposite - being so  fidgety or restless that you have been moving around a lot more than usual"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner8" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n  9. Thoughts that you would be better off dead or of hurting yourself in some way"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner9" />
+    <Button
+        android:text="SUBMIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="sum" />
+</LinearLayout>
+    </ScrollView>

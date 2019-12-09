@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#aaf000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Configuration"
+        android:ems="10"
+        android:id="@+id/textView12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        />
+
+
+
+    <TextView
+        android:text="Click the button below to mention which area of life you feel the most stress."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="24sp"
+        android:layout_weight="0.12"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:text="AREA OF STRESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4" />
+
+    <TextView
+        android:text="Click the button below to take a quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_weight="0.18"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:text="QUIZ FOR LEVEL OF DEPRESSION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:onClick="quiz"/>
+
+    <Button
+        android:text="OK"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+       />
+
+</LinearLayout>

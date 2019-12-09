@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grass">
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="M&#038;M is always with you"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/msg_recycle_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type someThing Here"
+        android:maxLines="2" />
+
+    <Button
+        android:id="@+id/msg_recycle_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button"
+        android:text="send"/>
+
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button"
+        android:onClick="evaluate"
+        android:text="Back" />
+
+</LinearLayout>

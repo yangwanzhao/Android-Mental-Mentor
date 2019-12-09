@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/grass"
+    tools:context="com.example.noahtucker.depression_app.MainActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="26dp"
+        android:background="#ffffffff"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="#ffffffff"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center|bottom"
+        android:text="Don't Have an Account?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="REGISTER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick = "register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick = "login"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Mental Mentor"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="381dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:text="A Chat-Bot that helps your stress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

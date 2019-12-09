@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#aaf000">
+
+
+    <TextView
+        android:text="Below are some suggested activities based on your diagnosed stress level:\n Click on a post to add that user as a friend\n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:id="@+id/list21" />
+
+    <Button
+        android:text="Add your own activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button25"
+        android:layout_weight="0.07"
+        android:onClick="addAct"/>
+
+    <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button24"
+        android:layout_weight="0.07"
+        android:onClick="mainMenu"/>
+</LinearLayout>

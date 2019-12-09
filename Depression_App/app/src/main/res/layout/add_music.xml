@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#aaf000">
+    <TextView
+        android:text="Please add your link in the box below.\n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView100"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText800"
+        android:hint="Add youtube link here"
+        android:textSize="24sp"
+        android:layout_weight="0.99"
+        android:selectAllOnFocus="false"
+        android:gravity="top"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:text="RELIGOUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1"
+            android:onClick="radioButtonClicked"/>
+
+        <RadioButton
+            android:text="NON-RELIGOUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1"
+            android:onClick="radioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button160"
+        android:onClick="submit13"/>
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button170"
+        android:onClick="cancel6"/>
+</LinearLayout>

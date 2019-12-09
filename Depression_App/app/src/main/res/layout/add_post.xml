@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#aaf000">
+
+    <TextView
+        android:text="Please type how you dealt with your stress in the box below.\n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_weight="0.10"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText80"
+        android:hint="Max 250 characters"
+        android:textSize="24sp"
+        android:layout_weight="0.91"
+        android:selectAllOnFocus="false"
+        android:gravity="top"
+        />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button16"
+        android:onClick="submit12"/>
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button17"
+        android:onClick="cancel5"/>
+</LinearLayout>
